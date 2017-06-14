@@ -27,6 +27,7 @@
 			<div class="view">
 				<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
 				<label><%- title %><%= completed ? '-- DONE!' : '' %></label>
+				<button class="priority-btn"></button>
 				<button class="destroy"></button>
 				<button class="edit-btn"></button>
 			</div>
@@ -37,6 +38,9 @@
 			<ul id="filters">
 				<li>
 					<a class="selected" href="#/">All</a>
+				</li>
+				<li>
+					<a href="#/priority">Priority</a>
 				</li>
 				<li>
 					<a href="#/active">Active</a>
